@@ -10,6 +10,7 @@
 
 @layer components {
   .icon {
-    @apply hidden xl:inline-flex p-2 h-10 w-10 rounded-full bg-gray-200 cursor-pointer text-gray-700 hover:bg-gray-300;
+    @apply flex p-2 mx-1 h-10 w-10 rounded-full bg-gray-200 cursor-pointer text-gray-700 hover:bg-gray-300;
   }
 }
+/* hidden xl:inline-flex */
