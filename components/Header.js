@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 import HeaderIcon from "../components/HeaderIcon";
 
 import {
@@ -24,6 +24,7 @@ import {
   FaChevronDown,
 } from "react-icons/fa";
 import { HiViewGrid } from "react-icons/hi";
+import { BsPlayBtn } from "react-icons/bs";
 
 function Header() {
   const { data: session } = useSession();
@@ -56,9 +57,9 @@ function Header() {
       <div className="hidden lg:inline-flex  justify-center flex-grow">
         <div className="flex space-x-6 md:space-x-2">
           <HeaderIcon Icon={HomeIcon} active />
-          <HeaderIcon Icon={FlagIcon} />
-          <HeaderIcon Icon={ShoppingCartIcon} />
+          <HeaderIcon Icon={BsPlayBtn} />
           <HeaderIcon Icon={UserGroupIcon} />
+          <HeaderIcon Icon={ShoppingCartIcon} />
         </div>
       </div>
       {/* right */}
@@ -73,6 +74,7 @@ function Header() {
           alt="logo"
           width={40}
           height={40}
+          onClick={signOut}
         ></Image>
         <p className="hidden xl:inline-flex font-semibold whitespace-nowrap pr-3">
           {session.user.name}
