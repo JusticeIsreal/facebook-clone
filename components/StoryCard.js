@@ -16,6 +16,18 @@ function StoryCard({ name, src, profile }) {
         alt="profile pic"
         layout="fill"
       ></Image>
+      <p
+        style={{
+          position: "absolute",
+          bottom: "0",
+          fontWeight: "600",
+          color: "white",
+          fontSize: "15px",
+        }}
+        className="absolute opacity-0 lg:opacity-100"
+      >
+        {name}
+      </p>
     </div>
   );
 }

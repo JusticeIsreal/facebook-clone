@@ -6,12 +6,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- 
 }
 
 @layer components {
   .icon {
     @apply flex p-2 mx-1 h-10 w-10 rounded-full bg-gray-200 cursor-pointer text-gray-700 hover:bg-gray-300;
+  }
+
+  .inputIcon {
+    @apply flex items-center space-x-1 hover:bg-gray-100 flex-grow justify-center p-2 rounded-xl cursor-pointer;
   }
 }
 /* hidden xl:inline-flex */

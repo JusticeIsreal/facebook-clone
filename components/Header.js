@@ -28,7 +28,7 @@ import { BsPlayBtn } from "react-icons/bs";
 
 function Header() {
   const { data: session } = useSession();
-  console.log(session);
+
   return (
     <div
       className="sticky top-0 x-50 bg-white flex items-center p-2 lg:px5 shadow-md"

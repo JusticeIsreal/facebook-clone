@@ -13,7 +13,7 @@ const stories = [
       "https://res.cloudinary.com/isreal/image/upload/v1665121683/IMG_7686_1_tq8mav.jpg",
   },
   {
-    name: "Micheal Adebayo",
+    name: "Mike Adebayo",
     src: "https://res.cloudinary.com/isreal/image/upload/v1676404014/Facebook%20clone/IMG_5504_2_bcpyt6.jpg",
     profile:
       "https://res.cloudinary.com/isreal/image/upload/v1676404040/Facebook%20clone/1655630846604_jibplr.jpg",
