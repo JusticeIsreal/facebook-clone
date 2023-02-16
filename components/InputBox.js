@@ -75,14 +75,14 @@ function InputBox() {
           height={40}
           layout="fixed"
         ></Image>
-        <form className="flex flex-1">
+        <form className="flex flex-1 flex-col">
           <input
             className="rounded-full h-12 bg-gray-100 flex-grow px-5 focus:outline-none"
             type="text"
             ref={inputRef}
             placeholder={`What's on your mind ${session.user.name} ?`}
           />
-          <button hidden type="submit" onClick={sendPost}>
+          <button type="submit" onClick={sendPost}>
             Submit
           </button>
         </form>
