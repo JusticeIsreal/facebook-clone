@@ -17,11 +17,28 @@ function Login() {
         Login with facebook
       </h1>
 
-      <p style={{ marginTop: "20px" }}>
+      <p
+        style={{
+          marginTop: "100px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+        }}
+      >
         Developed by <br /> JUSTICE ISREAL <br />
-        <a href="https://justice-agbonma.vercel.app/">Checkout my Portfolio</a>
+        <a
+          style={{ color: "blue" }}
+          href="https://justice-agbonma.vercel.app/"
+          target="_blank"
+        >
+          Checkout my Portfolio
+        </a>
       </p>
-      <h5 style={{ color: "red" }}> THIS IS A FACEBOOK CLONE, NOT FACEBOOK </h5>
+      <h5 style={{ color: "red", marginTop: "50px" }}>
+        {" "}
+        THIS IS A FACEBOOK CLONE, NOT FACEBOOK{" "}
+      </h5>
     </div>
   );
 }
