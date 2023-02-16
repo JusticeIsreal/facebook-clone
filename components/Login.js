@@ -16,6 +16,12 @@ function Login() {
       >
         Login with facebook
       </h1>
+
+      <p style={{ marginTop: "20px" }}>
+        Developed by <br /> JUSTICE ISREAL <br />
+        <a href="https://justice-agbonma.vercel.app/">Checkout my Portfolio</a>
+      </p>
+      <h5 style={{ color: "red" }}> THIS IS A FACEBOOK CLONE, NOT FACEBOOK </h5>
     </div>
   );
 }
