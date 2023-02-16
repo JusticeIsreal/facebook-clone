@@ -55,6 +55,10 @@ export default function Home() {
   return (
     <div>
       <Head>
+        <meta
+          property="og:image"
+          content="https://links.papareact.com/5me"
+        ></meta>
         <title>Facebook Clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
