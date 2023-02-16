@@ -1,3 +1,4 @@
+import { Skeleton } from "@mantine/core";
 import SinglePost from "../components/SinglePost";
 import { useState, useEffect } from "react";
 import {
@@ -28,21 +29,20 @@ function Posts() {
 
   return (
     <div>
-      {postData.length > 0
-        ? postData.map((post) => {
-            return (
-              <SinglePost
-                key={post.id}
-                name={post.name}
-                message={post.message}
-                email={post.email}
-                timestamp={post.timestamp}
-                image={post.image}
-                postImage={post.postImage}
-              />
-            );
-          })
-        : "loading"}
+      {postData &&
+        postData.map((post) => {
+          return (
+            <SinglePost
+              key={post.id}
+              name={post.name}
+              message={post.message}
+              email={post.email}
+              timestamp={post.timestamp}
+              image={post.image}
+              postImage={post.postImage}
+            />
+          );
+        })}
     </div>
   );
 }
