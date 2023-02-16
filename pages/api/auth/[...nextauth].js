@@ -6,7 +6,9 @@ export default NextAuth({
     FacebookProvider({
       clientId: process.env.FACEBOOK_CLIENT_ID,
       clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
-      callbackUrl: `${process.env.NEXTAUTH_URL}/api/connect/facebook/callback`,
     }),
   ],
+  // adapter: PrismaAdapter(prisma),
+  secret: process.env.NEXTAUTH_SECRET,
+  nextAuthUrl: process.env.NEXTAUTH_URL,
 });
