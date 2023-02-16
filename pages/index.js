@@ -21,7 +21,7 @@ export default function Home() {
           {/* header */}
           <Header />
 
-          <main className="flex">
+          <main className="flex" style={{ background: "#f5f3f3" }}>
             {" "}
             {/* sidebar */}
             <SideBar />

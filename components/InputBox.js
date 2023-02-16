@@ -2,14 +2,18 @@ import Image from "next/image";
 import { useSession } from "next-auth/react";
 import { useRef, useState } from "react";
 import { db, storage } from "../Firebase.js";
-import { addDoc, serverTimestamp } from "firebase/firestore";
+import {
+  addDoc,
+  serverTimestamp,
+  collection,
+  doc,
+  updateDoc,
+} from "firebase/firestore";
+import { ref, uploadString, getDownloadURL } from "firebase/storage";
 // ICONS
 import { EmojiHappyIcon } from "@heroicons/react/outline";
 import { CameraIcon, VideoCameraIcon } from "@heroicons/react/solid";
 
-// import { initializeApp } from "firebase/app";
-import { collection, doc, updateDoc } from "firebase/firestore";
-import { ref, uploadString, getDownloadURL } from "firebase/storage";
 function InputBox() {
   const { data: session } = useSession();
   const inputRef = useRef(null);
@@ -27,6 +31,7 @@ function InputBox() {
       message: inputRef.current.value,
       name: session.user.name,
       image: session.user.image,
+      email: session.user.image,
       timestamp: serverTimestamp(),
     });
 
