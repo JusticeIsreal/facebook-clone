@@ -21,18 +21,19 @@ function Login() {
         style={{
           marginTop: "100px",
           display: "flex",
+          flexDirection:"column",
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
         }}
       >
-        Developed by <br /> JUSTICE ISREAL <br />
+        Developed by <br /> <b>JUSTICE ISREAL AGBONMA</b> <br />
         <a
           style={{ color: "blue" }}
           href="https://justice-agbonma.vercel.app/"
           target="_blank"
         >
-          Checkout my Portfolio
+          Click here to see my Portfolio
         </a>
       </p>
       <h5 style={{ color: "red", marginTop: "50px" }}>
